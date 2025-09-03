@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donation Tracker</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <header 
+    class="h-screen bg-cover bg-center relative" 
+    style="background-image: url('./imag/donation.jpg');">
+
+    <!-- Overlay for opacity -->
+    <div class="absolute inset-0 bg-black/50"></div>
+
+    <div class="relative z-10 flex justify-between mx-10 pt-5 text-white items-center">
+        <div class="flex gap-3 items-center">
+            <img class="h-8 w-8 rounded-full" src="./imag/icon.jpg" alt="">
+            <h1 class="text-3xl font-bold italic"><span class="text-amber-300 text-4xl font-semibold font-serif">D</span>onation <span class="text-amber-300 text-4xl font-semibold font-serif">T</span>racker</h1>
+        </div>
+
+        <nav class="">
+        <ul class="flex gap-10 text-[18px] font-semibold">
+            <li class="hover:bg-gray-400 rounded-full hover:text-black py-1 px-3">
+                <a href="">Home</a>
+            </li>
+            <li class="hover:bg-gray-400 rounded-full hover:text-black py-1 px-3">
+                <a href="">About</a>
+            </li>
+            <li class="hover:bg-gray-400 rounded-full hover:text-black py-1 px-3">
+                <a href="">Blogs</a>
+            </li>
+            <li class="hover:bg-gray-400 rounded-full hover:text-black py-1 px-3">
+                <a href="">Contact Us</a>
+            </li>
+        </ul>
+    </nav>
+    <button class="text-black bg-lime-500 px-3 py-1 text-xl font-bold rounded-full hover:bg-lime-900 hover:text-white">
+        <a href="">Donate</a>
+    </button>
+    </div>
+
+    <div class="absolute mt-32 font-semibold  text-center">
+        <h1 class=" text-white text-5xl tracking-wide z-10">Helping Each Other <br> Make <span class="text-amber-400 italic">Better</span>Today</h1>
+        <p class="py-5 mx-52 text-white opacity-80">Joing our monthly giving program to provide consistent support to our initiatives. regular contribution, No matter the size, help us plan and sustain long-term projects.</p>
+        <div class="mt-8 gap-x-10 space-x-8">
+            <button class="h-14 text-black bg-lime-500 px-3 py-2 text-2xl font-semibold rounded-sm hover:drop-shadow-xl/50 hover:bg-lime-900 hover:text-white">
+                <a href="">DONATE NOW</a>
+            </button>
+            <button class="h-14 text-white bg-black px-3 py-2 text-2xl font-semibold rounded-sm hover:bg-gray-800 hover:drop-shadow-xl/50 hover:text-white">
+                <a href="">About Us</a>
+            </button>
+        </div>
+    </div>
+    </header>
+
+</body>
+</html>
