@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Volunteer Login</title>
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-200 flex items-center justify-center min-h-screen">
+
+<div class="bg-white shadow-lg rounded-lg p-8 w-full max-w-md">
+    <!-- Title -->
+    <h2 class="text-2xl font-bold text-center text-gray-700 mb-6">Admin Login</h2>
+
+    <!-- Login Form -->
+    <form action="login.php" method="POST" class="space-y-4">
+    <!-- Contact Info -->
+    <div>
+        <label class="block text-gray-700 font-semibold mb-1">Email:</label>
+        <input type="text" name="contact" placeholder="username@gmail.com"
+            class="w-full px-4 py-2 border border-gray-400 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+    </div>
+
+    <!-- Password -->
+    <div>
+        <label class="block text-gray-700 font-semibold mb-1">Password:</label>
+        <input type="password" name="password" placeholder="password"
+            class="w-full px-4 py-2 border border-gray-400 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit"
+            class="w-full bg-lime-600 hover:bg-lime-700 text-white font-bold py-2 rounded-lg transition">
+        Login
+        </button>
+    </form>
+</div>
+
+</body>
+</html>

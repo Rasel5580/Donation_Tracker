@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Donation Tracker</title>
+    <title>About Us</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <style>
     /* Smooth scrolling */
@@ -13,8 +13,7 @@
     </style>
 </head>
 <body>
-    <header
-    id="home"
+        <header
     class="h-screen bg-cover bg-center relative rounded-b-xl" 
     style="background-image: url('./imag/donation.jpg');">
 
@@ -30,7 +29,7 @@
         <nav class="">
         <ul class="flex gap-8 text-[18px] font-semibold">
             <li class="hover:bg-gray-400 rounded-full hover:text-black py-1 px-3 hover:transition-colors duration-1000">
-                <a href="#home">Home</a>
+                <a href="index.html">Home</a>
             </li>
             <li class="hover:bg-gray-400 rounded-full hover:text-black py-1 px-3 hover:transition-colors duration-1000">
                 <a href="about.html">About</a>
@@ -46,72 +45,27 @@
             </li>
         </ul>
     </nav>
-    <button class="text-black bg-lime-500 px-3 py-1 text-xl font-bold rounded-full hover:bg-lime-900 hover:text-white transition-colors duration-1000">
-        <a href="donation_form.html">Donate</a>
+    <button class="text-gray-200 px-3 py-1 text-lg border-2 border-gray-700 rounded-sm hover:bg-gray-600 transition-colors duration-1000">
+        <a href="admin.html">Admin</a>
     </button>
     </div>
 
 
-    <div class="absolute mt-32 font-semibold  text-center">
+    <div class="absolute left-1/3 mt-36 font-semibold insert-auto text-center ">
         <h1 class=" text-white text-5xl tracking-wide z-10">Helping Each Other <br> Make <span class="text-amber-400 italic">Better</span>Today</h1>
-        <p class="py-5 mx-52 text-white opacity-80">Joing our monthly giving program to provide consistent support to our initiatives. regular contribution, No matter the size, help us plan and sustain long-term projects.</p>
         <div class="mt-8 gap-x-10 space-x-8">
-            <button class="h-14 text-black bg-lime-500 px-3 py-2 text-2xl font-semibold rounded-sm hover:drop-shadow-xl/50 hover:bg-lime-900 hover:text-white hover:transition-all duration-1000">
-                <a href="donation_form.html">DONATE NOW</a>
-            </button>
-            <button class="h-14 text-white bg-black px-3 py-2 text-2xl font-semibold rounded-sm hover:bg-gray-800 hover:drop-shadow-xl/50 hover:text-white hover:delay-200 hover:transition-all duration-800">
-                <a href="about.html">About Us</a>
+            <button class="h-16 text-white bg-black px-5 py-3 mt-10 text-3xl font-semibold rounded-sm hover:bg-gray-800 hover:drop-shadow-xl/50 hover:text-white hover:delay-200 hover:transition-all duration-800">
+                <a href="">About Us</a>
             </button>
         </div>
     </div>
     </header>
-    <main class="">
-
-        <!--About Us-->
-        <section class=" bg-gray-200 shadow-2xl pt-16 rounded-2xl">
-            <div class="flex justify-between mx-5 gap-5">
-                <div class="w-1/2 mr-10 p-5">
-                <h1 class="text-4xl font-bold mb-5"><span class="text-5xl text-lime-300">H</span>elping Each Other Can Make 
-                    <br> 
-                    <span class="text-amber-300 italic">World</span> Better </h1>
-                <p class="text-[18px]">At Helping Each Other Can Make World Better, we believe that kindness is the foundation of real change. Our goal is to connect people who are willing to give with those who need support the most.
-
-                Through our donation tracking system, we ensure every contribution is transparent, accountable, and impactful. Whether it’s financial help, food, clothing, or other essentials, we make sure resources reach the right hands.
-
-                Together, we can build stronger communities where compassion drives action, and small acts of giving create a better world for everyone.</p>
-                            </div>
-            <div class="w-1/2 p-5">
-                <img class="rounded-2xl" src="./imag/about.jpg" alt="">
-            </div>
-            </div>
+    <main>
+        <section>
+            <h1></h1>
+            <p></p>
         </section>
-
-    <!--Donation-->
-    <section class=" mt-10 pt-10 mb-10">
-        <h1 class="text-4xl text-center font-bold mb-8 opacity-80">Your <span class="text-amber-400">Donation</span> Can <span class="text-amber-400">Transform</span> Lives</h1>
-    <div class="flex justify-around gap-2">
-        <div class="w-[400px] rounded-2xl shadow-2xl shrink-0 p-6 bg-white flex flex-col items-center text-center">
-            <img src="./imag/education.jpg" alt="" class="rounded-xl w-full h-64 object-cover" />
-            <h1 class="mt-4 text-2xl font-bold text-gray-800">Donation for Education of Childen</h1>
-            <p class="mt-2 text-gray-600">Children born into poverty who can access education are proven to break the poverty cycle and become successful independent adults.</p>
-            <button class="mt-4 px-5 py-2 bg-lime-600 text-white font-semibold rounded-lg shadow hover:bg-lime-700"><a href="donation_form.html">Donate Now</a></button>
-            </div>
-        <div class="w-[400px] rounded-2xl shadow-2xl shrink-0 p-6 bg-white flex flex-col items-center text-center">
-            <img src="./imag/water.jpg" alt="" class="rounded-xl w-full h-64 object-cover" />
-            <h1 class="mt-4 text-2xl font-bold text-gray-800">Donation of Fresh Water for People</h1>
-            <p class="mt-2 text-gray-600">Every child should have access to clean water and proper sanitation systems.However, not all of them can enjoy this right. </p>
-            <button class="mt-4 px-5 py-2 bg-lime-600 text-white font-semibold rounded-lg shadow hover:bg-lime-700"><a href="donation_form.html">Donate Now</a></button>
-            </div>
-        <div class="w-[400px] rounded-2xl shadow-2xl shrink-0 p-6 bg-white flex flex-col items-center text-center">
-            <img src="./imag/food.jpg" alt="" class="rounded-xl w-full h-64 object-cover" />
-            <h1 class="mt-4 text-2xl font-bold text-gray-800">Donation for Food of Poor People</h1>
-            <p class="mt-2 text-gray-600">Find food banks, homeless shelters, or community food programs in your area to donate non-perishable food items or money directly.</p>
-            <button class="mt-4 px-5 py-2 bg-lime-600 text-white font-semibold rounded-lg shadow hover:bg-lime-700"><a href="donation_form.html">Donate Now</a></button>
-            </div>
-        </div>
-    </section>   
     </main>
-
     <!--Footer section-->
     <footer class="bg-gray-700 text-gray-200 py-10 mt-10">
         <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-4 gap-8">

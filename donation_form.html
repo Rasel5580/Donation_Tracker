@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Donation Form</title>
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-700 min-h-screen flex items-center justify-center">
+
+<div class="max-w-2xl w-full bg-gray-600 pt-10 p-8 rounded-lg shadow-2xl my-5">
+  <h1 class="text-3xl font-bold text-center mb-6 text-white">Make a Donation</h1>
+
+  <form action="save_donation.php" method="POST" class="space-y-5">
+
+    <!-- Name -->
+    <div>
+      <label class="block text-md font-semibold text-white">Full Name:</label>
+      <input type="text" name="name" required
+        class="mt-1 w-full bg-gray-200 rounded-lg p-2 focus:ring focus:ring-blue-200" />
+    </div>
+
+    <!-- Email -->
+    <div>
+      <label class="block text-md font-semibold text-white">Email:</label>
+      <input type="email" name="email" required
+        class="mt-1 w-full bg-gray-200 rounded-lg p-2 focus:ring focus:ring-blue-200" />
+    </div>
+
+    <!-- Phone -->
+    <div>
+      <label class="block text-md font-semibold text-white">Phone:</label>
+      <input type="text" name="phone" required
+        class="mt-1 w-full bg-gray-200 rounded-lg p-2 focus:ring focus:ring-blue-200" />
+    </div>
+
+    <!-- Address -->
+    <div>
+      <label class="block text-md font-semibold text-white">Address:</label>
+      <input type="text" name="address" required
+        class="mt-1 w-full bg-gray-200 rounded-lg p-2 focus:ring focus:ring-blue-200" />
+    </div>
+
+    <!-- Donation Amount -->
+    <div>
+      <label class="block text-md font-semibold text-white">Donation Amount ($):</label>
+      <input type="number" name="amount" min="1" required
+        class="mt-1 w-full bg-gray-200 rounded-lg p-2 focus:ring focus:ring-blue-200" />
+    </div>
+
+    <!-- Payment Method -->
+    <div>
+      <label class="block text-md font-semibold text-white">Payment Method:</label>
+      <div class="flex items-center gap-4 mt-2">
+        <label class="flex items-center">
+          <input type="radio" name="payment_method" value="Credit Card" required />
+          <span class="ml-2 text-white">Credit Card</span>
+        </label>
+        <label class="flex items-center">
+          <input type="radio" name="payment_method" value="PayPal" />
+          <span class="ml-2 text-white">PayPal</span>
+        </label>
+        <label class="flex items-center">
+          <input type="radio" name="payment_method" value="Bank Transfer" />
+          <span class="ml-2 text-white">Bank Transfer</span>
+        </label>
+      </div>
+    </div>
+
+    <!-- Message -->
+    <div>
+      <label class="block text-md font-semibold text-white">Message (Optional):</label>
+      <textarea name="message" rows="3"
+        class="mt-1 w-full bg-gray-200 rounded-lg p-2 focus:ring focus:ring-blue-200"></textarea>
+    </div>
+
+    <!-- Submit Button -->
+    <div class="text-center">
+      <button type="submit"
+        class="w-full px-6 py-3 bg-lime-600 text-white font-bold rounded-lg shadow hover:bg-lime-700 transition">
+        Donate Now
+      </button>
+    </div>
+  </form>
+</div>
+
+</body>
+</html>
