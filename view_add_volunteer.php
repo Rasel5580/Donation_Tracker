@@ -26,7 +26,6 @@ $result = $conn->query($sql);
 <!-- Header with Logout Button -->
 <div class="flex justify-between items-center mb-6">
     <h1 class="text-3xl font-bold">Volunteers</h1>
-    <a href="logout.php" class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600">Logout</a>
 </div>
 
 <!-- Volunteer List Table -->

@@ -20,13 +20,13 @@ if (!isset($_SESSION['admin'])) {
 <body class="bg-gray-200 min-h-screen p-6">
 
 <!-- Header with Logout -->
-<div class="flex justify-between items-center mb-6">
-    <h1 class="text-3xl font-bold">Add Volunteer</h1>
-    <a href="logout.php" class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600">Logout</a>
+<div class="flex justify-center mb-6">
+    <h1 class="text-3xl font-bold text-center">Add Volunteer</h1>
 </div>
 
 <!-- Add Volunteer Form -->
-<div class="max-w-2xl w-full bg-white pt-6 p-6 rounded-lg shadow-lg">
+<div class="flex justify-center">
+    <div class="max-w-2xl w-full bg-white pt-6 p-6 rounded-lg shadow-lg">
     <form action="insert_volunteer.php" method="POST" class="space-y-4">
         <div>
             <label class="block text-gray-700 font-semibold mb-1">Name:</label>
@@ -46,6 +46,7 @@ if (!isset($_SESSION['admin'])) {
         </div>
         <button type="submit" class="w-full bg-lime-600 hover:bg-lime-700 text-white font-bold py-2 rounded-lg transition">Add Volunteer</button>
     </form>
+</div>
 </div>
 
 <div class="text-center mt-6">
